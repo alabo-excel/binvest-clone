@@ -93,9 +93,9 @@ a:hover {
   text-decoration: none;
 }
 @media (max-width: 900px) {
-  /* #aside{
-        display: none!important;
-    } */
+  #aside{
+        display: none;
+    }
   main {
     margin-left: 0px;
   }
