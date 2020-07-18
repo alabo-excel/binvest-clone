@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(196, 150, 196);
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #380496;
+    padding: 10px;
+    color: white;
+}
+#main{
+    color: white;
+    margin-left: 18%;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+}
+#dashboard{
+    margin-bottom: 32%;
+}
+.col-lg-3{
+    max-width: 23%!important;
+    margin: 10px;
+    padding: 20px;
+}
+.row{
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+#aside{
+    background-color: #380496;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    float: left;
+    color: white;
+}
+main i{
+    color: rgba(0,0,0,.15);}
+h3{
+    color: black;
+}
+ul li{
+    list-style-type: none;
+    color: white;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+hr{
+    color: white;
+    background-color: white;
+}
+#settings{
+    margin-bottom: 10%;
+    color: black;
+    display: none;
+}
+#toggle{
+    margin-left: 18%;
+}
+#withdraw{
+    margin-bottom: 30%;
+}
+label{
+    color: black;
+}
+.bottom{
+    background-color: rgba(0,0,0,.15);
+    margin-top: 20px;
+    margin-bottom: -20px;
+    width: 113%;
+    padding: 5px;
+    text-align: center;
+    margin-left: -15px;
+}
+#users, #plans, #withdraw, #investments, #payment{
+    display: none;
+}
+a:hover{
+    text-decoration: none;
+}
+@media(max-width: 900px){
+    /* #aside{
+        display: none!important;
+    } */
+    main{
+        margin-left: 0px;
+    }
+    .col-lg-3{
+        max-width: 45%!important;
+    }
+    .bottom{
+        width: 110%;
+    }
+    
+#toggle{
+    margin-left: 5%;
+}
+}
+@media(max-width: 500px){
+    .col-lg-3{
+        max-width: 100%!important;
+    }
+}

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <aside id="aside">
+        <div class="ml-4 mt-3" style="display: flex;">
+            <img id="img" src="./logo.png" style="width: 40px;" alt="" />
+            <h5 class="mt-2 ml-2">BINVEST</h5>
+        </div>
+        <hr>
+        <div class="ml-4 mt-3" style="display: flex;">
+            <img src="./user.png" style="width: 40px; border-radius: 50px;" alt="" />
+            <span class="mt-2 ml-2">Binvest Admin</span>
+        </div>
+        <hr>
+        <ul>
+            <a href="#">
+                <li id="dashboard-btn">
+                    <i class="fa fa-dashboard"></i>
+                    Dashboard
+                </li>
+            </a>
+            <a href="#">
+                <li id="plan-btn">
+                    <i class="fa fa-dashboard m-1"></i>
+                    Plans
+                </li>
+            </a>
+            <a href="#">
+                <li id="users-btn">
+                    <i class="fa fa-users m-1"></i>
+                    Users
+                </li>
+            </a>
+            <a href="#">
+                <li id="investment-btn">
+                    <i class="fa fa-money m-1"></i>
+                    Investments
+                </li>
+            </a>
+            <a href="#">
+                <li id="payment-btn">
+                    <i class="fa fa-money m-1"></i>
+                    Payments
+                </li>
+            </a>
+            <a href="#">
+                <li id="withdraw-btn">
+                    <i class="fa fa-download m-1"></i>
+                    Withdraws
+                </li>
+            </a>
+            <a href="#">
+                <li id="setting-btn">
+                    <i class="fa fa-cogs m-1"></i>
+                    Settings
+                </li>
+            </a>
+            <a href="./index.html">
+                <li id="logout-btn">
+                    <i class="fa fa-sign-out m-1"></i>
+                    Logout
+                </li>
+            </a>
+
+        </ul>
+    </aside>
+    <header>
+        <i id="toggle" class="fa fa-bars"></i>
+    </header>
+    <main id="main">
+        <section id="dashboard">
+            <div class="container-fluid">
+                <div><br>
+                    <h3>Dashboard</h3>
+                </div>
+                <div class="row"><br>
+                    <div class="col-lg-3 col-md-5 col-sm-12 bg-warning">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <h2>123</h2>
+                                <span>Users</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-users fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class=" bottom"><span>More info <i class="fa fa-arrow-circle-right text-white"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 bg-primary">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <h2>$151,672</h2>
+                                <span>Investments</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-money fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class=" bottom"><span>More info <i class="fa fa-arrow-circle-right text-white"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 bg-danger">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <h2>$151,672</h2>
+                                <span>Payments</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-money fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class=" bottom"><span>More info <i class="text-white fa fa-arrow-circle-right"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 bg-success">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <h2>$10</h2>
+                                <span>Withdraws</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-download fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class=" bottom"><span>More info <i class="text-white fa fa-arrow-circle-right"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="plans">
+            <h3>Plans</h3>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Max Deposit</th>
+                                <th scope="col">Min Deposit</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Return</th>
+                                <th scope="col">Duration</th>
+                                <th scope="col">Actions</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><img style="width: 60px;" src="./plan.jpg" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><img style="width: 60px;" src="./gold.png" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><img style="width: 60px;" src="./platinum.png" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><img style="width: 60px;" src="./plan.jpg" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><img style="width: 60px;" src="./gold.png" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td><img style="width: 60px;" src="./platinum.png" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td><img style="width: 60px;" src="./plan.jpg" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td><img style="width: 60px;" src="./gold.png" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td><img style="width: 60px;" src="./platinum.png" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td><img style="width: 60px;" src="./plan.jpg" alt=""></td>
+                                <td>New Plan</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                                <td>5</td>
+                                <td>90 Months</td>
+                                <td><input
+                                        style="background-color: #380496; border: none; color: white; padding: 10px; border-radius: 5px;"
+                                        type="button" value="Edit"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="users">
+            <h3>Users</h3>
+
+            <div class="row">
+
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Mark Walden</td>
+                                <td>markwalden35@gmail.com </td>
+                                <td>2020-07-17 14:00:42 </td>
+                                <td><input
+                                        style="border: none; border-radius: 5px;  background-color: #380496; color: white; padding: 8px;"
+                                        type="button" value="Add Investment"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="investments">
+            <h3>Investment</h3>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Plan</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden </td>
+                                <td>Running</td>
+                                <td>2020-07-17 20:48:41 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="payment">
+            <h3>Payments</h3>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Plan</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Hash</th>
+                                <th scope="col">Date</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>144</td>
+                                <td>Platinum</td>
+                                <td>Mark Walden</td>
+                                <td>Success</td>
+                                <td></td>
+                                <td>5f120ea95de76137dyh1 </td>
+                                <td>2020-07-17 20:48:41
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="withdraw">
+            <h3>Withdraws</h3>
+            <div class="row">
+
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Hash</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>5</td>
+                                <td>Binvest User</td>
+                                <td>Failed</td>
+                                <td>1Aub8YMeTCA28xYRa6LZ64WLMU1s8x6Yjf</td>
+                                <td>fgfdgrftgretgfdgfd </td>
+                                <td>2020-03-11 19:07:49
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>5</td>
+                                <td>Binvest User</td>
+                                <td>Failed</td>
+                                <td>1Aub8YMeTCA28xYRa6LZ64WLMU1s8x6Yjf</td>
+                                <td>fgfdgrftgretgfdgfd </td>
+                                <td>2020-03-11 19:07:49
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>5</td>
+                                <td>Binvest User</td>
+                                <td>Failed</td>
+                                <td>1Aub8YMeTCA28xYRa6LZ64WLMU1s8x6Yjf</td>
+                                <td>fgfdgrftgretgfdgfd </td>
+                                <td>2020-03-11 19:07:49
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="settings">
+            <h3>Settings</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="" style="width: 50%;">
+                    <div style="color: white; background-color: #380496; width: 100%; padding: 10px;">
+                        <h5>Settings Details</h5>
+                    </div>
+                    <label for="">Minimum Withdraw</label><br>
+                    <input type="text" value="100"><br>
+                    <label for="">Maximum Withdraw</label><br>
+                    <input type="text" value="5000"><br>
+                    <label for="">Affiliate Percentage</label><br>
+                    <input type="text" value="10"><br>
+                    <label for="">Withdraw Charge</label><br>
+                    <input type="text" value="5"><br><br>
+                    <input style="width: 80px; background-color: #380496; color: white; border: none; border-radius: 5px;" type="button" value="Submit">
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="card">
+        <div style="display: flex; justify-content: space-between; color: #380496; font-weight: 700;" class="p-3">
+            <span style="margin-left: 10%;">Copyright © 2020 Binvest All rights reserved.</span>
+            <span>Developed by Alabo Excel</span>
+        </div>
+    </footer>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

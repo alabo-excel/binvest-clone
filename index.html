@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 180px;
+            text-align: center;
+            background: #e9ecef;
+        }
+        input {
+            padding: 8px;
+            width: 23%;
+        }
+        .fa{
+            position: absolute;
+            left: 59%;
+        }
+        .fa-envelope{
+            top: 58%;
+        }
+        .fa-lock{
+            top: 72%;
+        }
+        @media(max-width: 900px){
+            input{
+                width: 80%;
+            }
+            .fa{
+            position: absolute;
+            left: 80%;
+        }
+        }
+    </style>
+</head>
+
+<body class="col-12">
+    <div>
+        <h1>BINVEST</h1>
+        <form action="">
+            <span>Sign in to your account</span><br><br>
+            <input type="email" placeholder="Email"><i class="fa fa-envelope"></i> <br><br>
+            <input type="password" placeholder="Password"><i class="fa fa-lock"></i> <br><br>
+
+            <div style="display: flex; align-content: center; justify-content: center;">
+                <span><input style="padding: 0px; width: 10px; width: 22px; height: 22px" type="checkbox"> Remember
+                    Me</span>
+                <a href="./dashboard.html">
+                    <input
+                        style="width: 80px;  margin-left: 80px; background-color: #380496; color: white; border: none; border-radius: 5px;"
+                        type="button" value="Sign In"><br>
+                </a>
+            </div>
+            <div>
+                <span style="color: #380496;">I forgot my password</span><br>
+                <span style="color: #380496;">Have no account?</span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
