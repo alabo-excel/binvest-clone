@@ -19,7 +19,7 @@ toggle.addEventListener('click', function(){
         main.style.marginLeft = '18%'
     }else{
         dataToggle.style.display = 'none'
-        main.style.marginLeft = '0px'
+        main.style.marginLeft = '0%'
     }
     
 })

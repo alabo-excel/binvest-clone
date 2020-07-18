@@ -1,111 +1,123 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-body{
-    background-color: rgb(196, 150, 196);
-    margin: 0px;
-    padding: 0px;
+body {
+  background-color: rgb(196, 150, 196);
+  margin: 0px;
+  padding: 0px;
+  min-width: 100%;
 }
-header{
-    background-color: #380496;
-    padding: 10px;
-    color: white;
+header {
+  background-color: #380496;
+  padding: 10px;
+  color: white;
 }
-#main{
-    color: white;
-    margin-left: 18%;
+#main {
+  color: white;
+  margin-left: 18%;
 }
-input{
-    padding: 10px;
-    width: 100%;
-    margin: 10px;
+input {
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
 }
-#dashboard{
-    margin-bottom: 32%;
+#dashboard {
+  margin-bottom: 32%;
 }
-.col-lg-3{
-    max-width: 23%!important;
-    margin: 10px;
-    padding: 20px;
+.col-lg-3 {
+  max-width: 23% !important;
+  margin: 10px;
+  padding: 20px;
 }
-.row{
-    margin-right: 0px!important;
-    margin-left: 0px!important;
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
-#aside{
-    background-color: #380496;
-    height: 100vh;
-    position: fixed;
-    z-index: 1;
-    float: left;
-    color: white;
+#aside {
+  background-color: #380496;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  float: left;
+  color: white;
 }
-main i{
-    color: rgba(0,0,0,.15);}
-h3{
-    color: black;
+main i {
+  color: rgba(0, 0, 0, 0.15);
 }
-ul li{
-    list-style-type: none;
-    color: white;
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 60px;
+h3 {
+  color: black;
 }
-hr{
-    color: white;
-    background-color: white;
+ul li {
+  list-style-type: none;
+  color: white;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 60px;
 }
-#settings{
-    margin-bottom: 10%;
-    color: black;
-    display: none;
+hr {
+  color: white;
+  background-color: white;
 }
-#toggle{
-    margin-left: 18%;
+#settings {
+  margin-bottom: 10%;
+  color: black;
+  display: none;
 }
-#withdraw{
-    margin-bottom: 30%;
+#toggle {
+  margin-left: 18%;
 }
-label{
-    color: black;
+#withdraw {
+  margin-bottom: 30%;
 }
-.bottom{
-    background-color: rgba(0,0,0,.15);
-    margin-top: 20px;
-    margin-bottom: -20px;
-    width: 113%;
-    padding: 5px;
-    text-align: center;
-    margin-left: -15px;
+label {
+  color: black;
 }
-#users, #plans, #withdraw, #investments, #payment{
-    display: none;
+.bottom {
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: -20px;
+  width: 113%;
+  padding: 5px;
+  text-align: center;
+  margin-left: -15px;
 }
-a:hover{
-    text-decoration: none;
+#users,
+#plans,
+#withdraw,
+#investments,
+#payment {
+  display: none;
 }
-@media(max-width: 900px){
-    /* #aside{
+a:hover {
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  /* #aside{
         display: none!important;
     } */
-    main{
-        margin-left: 0px;
-    }
-    .col-lg-3{
-        max-width: 45%!important;
-    }
-    .bottom{
-        width: 110%;
-    }
-    
-#toggle{
+  main {
+    margin-left: 0px;
+  }
+  .col-lg-3 {
+    max-width: 45% !important;
+  }
+  .bottom {
+    width: 110%;
+  }
+
+  #toggle {
     margin-left: 5%;
+  }
 }
-}
-@media(max-width: 500px){
-    .col-lg-3{
-        max-width: 100%!important;
-    }
+@media (max-width: 500px) {
+  #aside {
+    height: 100vh;
+  }
+  .col-lg-3 {
+    max-width: 100% !important;
+  }
+  #main {
+    margin-left: 0px !important;
+  }
 }
